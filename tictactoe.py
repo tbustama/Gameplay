@@ -25,6 +25,7 @@ def player_move(icon):
     else:
         print()
         print("That space is taken!")
+        return player_move(icon)
 
 def is_victory(icon):
     if (board[0] == icon and board[1] == icon and board[2] == icon) or \
